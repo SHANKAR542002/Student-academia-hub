@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Branch Selection</title>
+    <link rel="stylesheet" type="text/css" href="brselectupdatemarks.css">
+</head>
+<body class="branch-selection">
+
+    <!-- Form to submit the selected branch value -->
+    <form action="process_selection.php" method="post">
+        <div class="card-container branch-card-container">
+            <div class="card branch-card">
+                <input type="radio" name="branch" value="CSE" style="display: none;">
+                <label for="branch1">
+                    <img src="cse-image.jpg" alt="CSE">
+                    <div class="card-text branch-card-text">CSE</div>
+                </label>
+            </div>
+
+            <div class="card branch-card">
+                <input type="radio" name="branch" value="ECE" style="display: none;">
+                <label for="branch2">
+                    <img src="ece-image.jpg" alt="ECE">
+                    <div class="card-text branch-card-text">ECE</div>
+                </label>
+            </div>
+
+            <div class="card branch-card">
+                <input type="radio" name="branch" value="CSM" style="display: none;">
+                <label for="branch3">
+                    <img src="csm-image.jpg" alt="CSM">
+                    <div class="card-text branch-card-text">CSM</div>
+                </label>
+            </div>
+
+            <div class="card branch-card">
+                <input type="radio" name="branch" value="CSD" style="display: none;">
+                <label for="branch4">
+                    <img src="csd-image.jpg" alt="CSD">
+                    <div class="card-text branch-card-text">CSD</div>
+                </label>
+            </div>
+
+            <div class="card branch-card">
+                <input type="radio" name="branch" value="Civil" style="display: none;">
+                <label for="branch5">
+                    <img src="civil-image.jpg" alt="Civil">
+                    <div class="card-text branch-card-text">Civil</div>
+                </label>
+            </div>
+
+            <div class="card branch-card">
+                <input type="radio" name="branch" value="Mech" style="display: none;">
+                <label for="branch6">
+                    <img src="mech-image.jpg" alt="Mech">
+                    <div class="card-text branch-card-text">Mech</div>
+                </label>
+            </div>
+
+            <div class="card branch-card">
+                <input type="radio" name="branch" value="EEE" style="display: none;">
+                <label for="branch7">
+                    <img src="eee-image.jpg" alt="EEE">
+                    <div class="card-text branch-card-text">EEE</div>
+                </label>
+            </div>
+        </div>
+
+        <input class="submit" type="submit" value="Submit">
+    </form>
+</body>
+</html>

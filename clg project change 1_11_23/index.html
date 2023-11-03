@@ -1,0 +1,66 @@
+<html>
+<head> 
+    <script src="valid.js"></script>
+<title> Login</title>
+<link rel="stylesheet" href="login.css">
+<style>
+html{
+            background:url('register-image1.jpeg') no-repeat center center fixed;
+           -webkit-background-size:cover;
+            -moz-background-size: cover;
+            -o-backgrounds-size: cover;
+            background-size: cover;}
+        </style>
+
+
+
+</head>
+<body>
+<div class="sign-up-form">
+<img src="pngwing.com.png">
+<h1> Student Login</h1>
+<form name="studentform" method="GET">
+<input type="Username" class="input-box" placeholder="Roll number" name="login">
+<input type="password" class="input-box" placeholder="Password" name="password">
+<div class="col-12">
+    
+    <select class="input-box" name="branch" aria-label="Default select example" required>
+        <option value="" disabled selected>Branch</option>
+        <option value="cse">CSE</option>
+        <option value="csm">CSM</option>
+        <option value="csd">CSD</option>
+        <option value="ece">ECE</option>
+        <option value="mech">MECH</option>
+        <option value="eee">EEE</option>
+        <option value="civil">CIVIL</option>
+    </select>
+</div>
+<input type="submit" id="sbtn1" value="LOGIN" name="submit" >
+</form >
+</div>
+
+<div class="sign-up-form">
+    <img src="i.png">
+    <h1> Admin Login</h1>
+    <DIV class="formc" >
+    <input type="Username" id="admin1" class="input-box" placeholder="Username" name="login">
+    <input type="password" id="pass" class="input-box" placeholder="Password" name="password">
+    
+<input type="submit" id="sbtn2" value="LOGIN" name="submit" onclick="validate()" >    
+    </DIV>
+    </div>
+
+    <div class="sign-up-form">
+        <img src="faculty.png">
+        <h1> Faculty Login</h1>
+        <form name="facultyform" method="POST" action="facultylogin.php">
+        <input type="Username" class="input-box" placeholder="Id" name="id">
+        <input type="password" class="input-box" placeholder="Password" name="password">
+        
+        
+<input type="submit" id="sbtn3" value="LOGIN" name="submit">        
+        </form>
+        </div>
+
+</body>
+</html>

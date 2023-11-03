@@ -1,0 +1,84 @@
+
+        /* Center the cards on the page */
+        body {
+            display: flex;
+            flex-wrap: wrap;            
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(216, 206, 206); /* Background color for the whole page */
+        }
+        /* Center the submit button horizontally */
+form {
+    display: flex;
+    margin-top: 70px;
+    flex-direction: column;
+    align-items: center; /* Center the form content horizontally */
+}
+        input[type="submit"] {
+            background-color: #0074d9; /* Bluish color */
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff; /* Text color */
+            border: none; /* Remove border */
+            padding: 10px 20px; /* Add padding to the button */
+            margin: 10px;
+            cursor: pointer;
+            display: block; 
+            border-radius: 7px;
+            transition: background-color 0.3s; /* Add transition for a hover effect */
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Darker bluish color on hover */
+        }
+        /* Stylish card design with light gray colors, border effect, and hover effect */
+        .card {
+            width: 220px;
+            height: 300px;
+            margin: 10px;
+            background: linear-gradient(to bottom, #284960, #b1bbc2); /* Light gray gradient background */
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6); /* Shadow effect */
+            border: 2px solid #ccc; /* Light gray border */
+            border-radius: 20px;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+            color: #333; /* Text color */
+            transition: transform 0.6s, box-shadow 0.2s; /* Add transition for smooth hover effect */
+        }
+
+        .card:hover {
+            transform: scale(1.1); /* Enlarge the card on hover */
+            border-color: rgb(59, 213, 218);
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.8); /* Increase shadow intensity on hover */
+        }
+
+        .card img {
+            max-width: 100%;
+            display: flex;
+            height: 70%;
+            margin-top: 10px;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        
+        .card-text {
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: rgb(120, 140, 164); /* Light gray background for branch name */
+            font-weight: bold;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .card-container {
+            text-align: center; /* Center the container */
+        }
+       
